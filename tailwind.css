@@ -30,8 +30,30 @@
   display: none
 }
 
+.h-64 {
+  height: 16rem
+}
+
+.w-full {
+  width: 100%
+}
+
 .border {
   border-width: 1px
+}
+
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity))
+}
+
+.px-10 {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem
+}
+
+.pt-5 {
+  padding-top: 1.25rem
 }
 
 .uppercase {
@@ -40,9 +62,4 @@
 
 .capitalize {
   text-transform: capitalize
-}
-
-.text-yellow-600 {
-  --tw-text-opacity: 1;
-  color: rgb(202 138 4 / var(--tw-text-opacity))
 }
