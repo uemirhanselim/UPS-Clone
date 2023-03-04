@@ -20,7 +20,7 @@ type TrackingItemsList {
 }
 
 type Query {
-  getTrackingItemById(id: ID!): TrackingItems
+  getTrackingItemsById(id: ID!): TrackingItems
     @rest(
       endpoint: "https://ups-react-default-rtdb.europe-west1.firebasedatabase.app/trackingItems/$id.json"
     )
