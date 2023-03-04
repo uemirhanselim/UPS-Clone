@@ -23,6 +23,7 @@ const CustomersScreen = () => {
     const { loading, error, data } = useQuery(GET_CUSTOMERS)
 
     useLayoutEffect(() => {
+        console.log("ALooooo")
         navigation.setOptions({
             headerShown: false
         })

@@ -21,7 +21,7 @@ const useOrders = () => {
         }));
 
         setOrders(order)
-    })
+    }, [data])
 
     return { loading, error, orders };
 }

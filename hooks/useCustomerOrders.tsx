@@ -2,12 +2,12 @@ import { useQuery } from '@apollo/client'
 import React, { useEffect, useState } from 'react'
 import { GET_ORDERS } from '../graphql/queries'
 
-function useCustomerOrders(userId: String) {
+const useCustomerOrders = (userId: String) => {
     const { loading, error, data } = useQuery(GET_ORDERS)
     const [orders, setOrders] = useState<Order[]>([])
 
     useEffect(() => {
-        if (!data) return;
+        if (!data) return console.log("Gelimoyr");
 
         const orders: Order[] = data.getOrders.map(({ value }: OrderResponse) => ({
             carrier: value.carrier,
@@ -25,7 +25,7 @@ function useCustomerOrders(userId: String) {
         setOrders(customerOrders);
     }, [data, userId])
 
-    return {loading, error, orders};
+    return { loading, error, orders };
 }
 
 export default useCustomerOrders
