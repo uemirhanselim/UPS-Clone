@@ -1,4 +1,4 @@
-# Flutter Crypto APP
+# React Native UPS Clone App
 UPS 2.0 Clone with UI and Backend using React Native, TypeScript and more...
 
 ### Stack
